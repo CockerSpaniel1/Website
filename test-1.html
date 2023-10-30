@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <!--註解-->
+        
+        <!-- 快捷鍵ctrl+/ -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="學習網頁設計">
+        <meta name="description" content="第一個網頁">
+        <meta name="author" content="schnauzer, schnauzer@gmail.com">
+        <meta name="viewport" content="width=device-width, initail-scale=1.0, minimum-scale=0.5, maximum-scale=2">
+        <link rel="shortcut icon" href="images/twitter.ico">
+        <link href="style1.css" rel="stylesheet">
+        <title>第一個網頁</title>
+        <style>
+            p {
+                color:MediumSeaGreen;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                font-weight:bold;
+            }
+            
+            .purplecolor{color:SlateBlue; font-weight:bold; font-style:italic;}
+
+            #bluecolor{
+                color:dodgerblue; 
+                font-weight:bolder; 
+                font-size:20px; }
+
+            a:link{
+                color:coral;
+                text_decoration:none;
+            }          
+            a:hover{
+                color:yellowgreen;
+                text_decoration:underline;
+            }  
+            a:active{
+                color:brown;
+                text_decoration:none;
+            } 
+            a:visited{
+                color:black;
+                text_decoration:underline;
+            }
+            ::selection{
+                color:yellow;
+                background: black;
+            }
+            #test p{color:Crimson; font-weight:bold; font-style:italic;}
+            ul  li + li + li {color:darkmagenta; font-weight:bold; font-style:italic;}
+            ol>li:nth-child(even){color:darkred; font-weight:bold; font-style:italic;}
+
+            .first{color:gold ;}
+            .second{color:violet}
+
+            .box{
+                width:80px;
+                background-color:grey;
+                padding:20px;
+                margin: 10px;
+                float:left;
+            }
+        </style>
+    <link href="style1.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 style="color:#f00; font-style: italic;">標題一</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, rerum!</p>
+            <p class="purplecolor">Lorem ipsum dolor sit amet <span id="bluecolor">consectetur adipisicing elit.</span> Facilis, veniam?</p>
+
+       <h2>標題二</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, error.</p>
+            <br>
+            <p>Lorem, ipsum.</p>
+        <div id="test">
+            <p>愛麗絲藍（英語：Alice-Blue）是一種顏色，是屬於藍色系的一種顏色，其顏色接近淺藍灰色或鋼青色。
+            </p>
+            <div>
+                <p class="bluecolor">愛麗絲藍這一種顏色由美國總統西奧多·羅斯福之女愛麗絲創造，故而被命名為愛麗絲藍。
+                </p>
+            </div>
+
+        </div>
+        <p class="second first"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit cum iusto maxime illo quod qui velit, aliquam ullam quaerat quisquam dolorum quasi at nobis maiores ratione beatae itaque sapiente!</span><span>Iusto minus ex enim esse placeat nihil, reprehenderit obcaecati nam, numquam pariatur, officia ipsa debitis. Dolore eius ipsa nesciunt rerum, deleniti doloribus, minus fugiat repellat est accusantium, consequuntur dignissimos sapiente!</span></p>
+        <!-- h2{123}+h3{abc} -->
+        <h2 class="#bluecolor">123</h2>
+        <h3>abc</h3>
+        <a href="test-2.html">圖片網頁</a>
+        <ul>
+            <li>項目清單1</li>
+            <li>項目清單2</li>
+            <li>項目清單3</li>
+            <li>項目清單4</li>
+            <li>項目清單5
+                <ul>
+                    <li>子項目5-1</li>
+                    <li>子項目5-2</li>
+                    <li>子項目5-3</li>
+                    <li>子項目5-4</li>
+                    <li>子項目5-5</li>
+                </ul>
+            </li>
+
+        </ul>
+        <ol>
+            <li>項目清單1</li>
+            <li>項目清單2</li>
+            <li>項目清單3</li>
+            <li>項目清單4</li>
+        </ol>
+        <!-- table>tr*4>td*3 -->
+        <p>&nbsp</p>
+        
+        <table border="1" width="500px" cellspacing="0" cellpadding="5">
+            <caption>期中考成績</caption>
+            <tr>
+                <td width="100px"></td>
+                <th>國文</th>
+                <th>英文</th>
+            </tr>
+            <tr>
+                <th width="200px">王大明</th>
+                <td>90</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <th width="200px">陳阿貓</th>
+                <td>85</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <th>備註</th>
+                <td colspan="2">****</td>
+                
+            </tr>
+            <tr >
+                <th rowspan="2">說明</td>
+                <td colspan="2"></td>
+                
+            </tr>
+            <tr>
+                
+                <td colspan="2"></td>
+            </tr>
+        </table>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+
+        <div class="box">我是盒子</div>
+        <div class="box">我是盒子</div>
+        <div class="box">我是盒子</div>
+    </body>
+</html>
