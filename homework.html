@@ -8,29 +8,81 @@
     <title>Document</title>
 
     <style>
-        *{box-sizing: border-box;}
-       
-        #content{float:left}
-        #siderbar{float:left; margin-left: 20px;}
-        #footer{clear:both}
+        * {box-sizing: border-box;}
+        
+        body {font-family: Arial, Helvetica, sans-serif;
+            margin: 0;      }
+        #header {
+            
+            padding: 0px;
+            width: 100%;
+        }
+
+        #header h1{
+            font-size: 50px;
+            
+        }
+        
+        #content{float:left; width: 75%;padding:5px}
+        #siderbar{float:left;  width:26%;}
+        #footer{clear:both;
+            background: #aaa;
+                     text-align: left;
+                     clear: both;
+                     padding: 5px;
+                 }
+        #nav {overflow:hidden;
+            background-color: black;
+            }
+         #nav > a{
+                    margin:1px;
+                    
+                     color: white;
+                     text-decoration: none;
+                     padding: 14px 16px;
+                     ;
+                     /* float: left; */
+                 }
+        .menu h3{color:lighblue}
+                 ul {
+                   list-style: none;
+                   border-top:2px solid black;
+                    border-bottom:2px solid black;
+                 }
+                 
+                 /* ul li:before{
+                    content: '';
+                    position: absolute;
+                    border-right:2px solid black;
+                    border-bottom:2px solid black;
+                    width:10px;
+                    height:10px;
+                    top: calc(50% - 4px);
+                    left: -20px;
+                    transform: translateY(-50%) rotate(-45deg);
+                 } */
     </style>
 </head>
 
 <body>
     <div id="container">
         <div id="header">
-            <div id="site"><h1>MeTrowalk Kitchen</h1></div>
+            <h1></h1>
+            <div id="site">Cappadocia City</div>
             <div id="iconmenu">Twitter 4張圖</div>
-            <div id="headerimg"><img src="snow2.jpg" height="305px" width="960px" object-fit="fill"></div>
-            <div id="nav">HOME ABOUT CONTACT</div>
+            <div id="headerimg"><img src="snow.jpg" height="305px" width=100%  object-fit="none"></div>
+            
+            <div id="nav">
+                <a href="#">HOME</a> <a href="#">ABOUT</a> <a href="#">CONTACT</a>
+            </div>
         </div>
-
+   
         <div id="content" >
-            <id class="date">17sep圖</id>
-            <h2>桃園大江購物中心</h2>
-            <div class="cat">CATEOGRY:中壢一日遊</div>
+            <div class="date">17sep圖</div>
+            <h2>繽紛熱氣球點綴土耳其卡帕多奇亞天空</h2><hr>
+            <div class="cat">CATEOGRY:<a href="#">土耳其精選旅遊</a></div>
             <p>大江購物中心位在.....</p>
-            <p><img src="snow2.jpg" height="400px" width="600px" object-fit="fill"></p>
+            <p><img src="snow.jpg" height="400px" width="600px" object-fit="fill"></p>
             <p>2018</p>
             <p>青塘園</p>
         </div>
@@ -39,31 +91,31 @@
 
             <div class="menu">
                 <div class=".ad_title">找行程</div>
-                <img src="snow.jpg" height="300px" width="300px" object-fit="fill">
+                <img src="snow.jpg" height="300px" width="300px"  object-fit="fill">
                 <a>探訪歐洲美學聖地</a>
             </div>
             <div class="menu">
-                <h3>跳島風情</h3>
+                <h3>熱門區域</h3>
                 <ul>
-                <li>巴里島</li>
-                <li>濟州島</li>
-                <li>塞班島</li>
-                <li>大溪地</li>
-            </ul>
+                    <li>紐澳美加</li>
+                    <li>日韓</li>
+                    <li>西歐</li>
+                    <li>泰國</li>
+                </ul>
             </div>
             <div class="menu">
-                <h3>景點快搜</h3>
+                <h3>主題旅遊</h3>
                 <ul>
-                    <li>網美力推</li>
-                    <li>隨意來去</li>
-                    <li>舊時回憶</li>
-                    <li>新汁新味</li>
+                    <li>郵輪旅遊</li>
+                    <li>山林旅遊</li>
+                    <li>海島旅遊</li>
+                    <li>客製化行程</li>
                 </ul>
             </div>
         </div>
         <div id="footer">
             <p>流動式版面練習</p>
-            <small>2014 CopyRight Sunny</small>
+            <small>2024 © CopyRight Schnauzer</small>
         </div>
     </div>
 </body>
