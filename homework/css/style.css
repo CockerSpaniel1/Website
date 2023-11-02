@@ -1,0 +1,101 @@
+/* 變數宣告 */
+:root{--blue:#0097d8ff}
+
+
+/* 歸零設定 */
+body, h1 ,h2, h3 ,p, div, table, th , td ,span ,small, ul , ol, li{
+    margin:0;
+    padding:0;
+    line-height:1;
+    font-weight:normal;
+}
+
+ul, li{list-style-type:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+img{border:none;vertical-align:bottom;} 
+
+
+
+/* 基本設定 */
+body{ font-family:"微軟正黑體",sans-serif;
+    color:dimgray;
+    padding:24px 10px;}
+
+a:link, a:visited{color:blue;}
+a:hover{color:orange;}
+
+/* 版面結構設定 */
+#container{width:960px; margin:0 auto;}
+#header, #content, #siderbar{margin-bottom:50px;}
+#content{width:600px; float:left;}
+#sidebar{width:300px; float:right; }
+#footer, #headerimg{clear:both}
+
+/* 頁首設定 */
+#site{float:left;font-size: 35px;font-weight:bold;font-style: italic;font:Arial;}
+#site img{width:90px; height:90px;}
+#iconmenu{float: right; font-size:35px; text-align:center;margin-bottom: -20px;}
+
+#iconmenu a{color:lightgrey}
+#iconmenu a:hover{color:DodgerBlue}
+
+#headerimg img{
+    margin-top:5px;
+}
+/* 主選單設定*/
+#nav{font-size:14px;
+    background-color:black;
+    border-top:solid 1px white;
+    overflow:hidden;
+   ;
+}
+#nav li a{ 
+display:block;
+width:120px;
+padding:10px;
+float: left;
+color:white;text-align:center;border-right:solid 1px white;}
+
+#nav li a:hover{background-color: DodgerBlue;}
+
+/* 內容區設定 */
+.date{float:right;background:LightSkyBlue;text-align:center;padding:18px 25px; border-radius:50%;font-weight:bold;margin-top:-15px}
+.date span{display :block; font-size:2em;}
+
+#content h2{font-size:1.75em;border-bottom:solid 1px silver;color:black;font-weight: bold;}
+#content p{line-height:1.4;text-align:justify; }
+
+.cat{font-size: 0.875em;margin:10px 0 30px}
+
+/* 右方廣告區設定 */
+.ad_title{font-size:30px;
+    color:DodgerBlue;margin-bottom:15px;padding-left: 40px;
+     background-image:url(../images/search.png);
+    background-repeat:no-repeat;
+    background-position:3%  center} 
+
+
+
+/* 右方選單設定 */
+.menu{margin-bottom:50px;}
+
+.menu h3{font-size:1.625em; color:DodgerBlue; margin-bottom :5px; }
+.menu ul {border-top:solid 2px silver}
+.menu li {border-bottom:solid 2px silver}
+.menu a {font-size:14px;color:black;display:block;padding:10px 0 10px 30px;
+background-image:url(../images/arrow.png);
+background-repeat:no-repeat;
+background-position:0  50%} 
+
+.menu a:hover{background-color:lightblue}
+
+#footer{color:white;background:black; padding:10px 10px 20px}
+#footer small{
+    font-size:0.75em;
+    font-weight:bold;
+    display:block;
+    margin-top:8px;
+}
+
+.mv_10{margin:10px 0;}
